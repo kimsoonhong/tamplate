@@ -13,12 +13,14 @@ const Wrapper = styled.div`
 	width: 1200px;
 	height: 100vh;
 	margin: auto;
-	background-color: #63c53952;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 `;
 const Body = styled.div`
 	display: flex;
 	width: 100%;
-	background-color: green;
 `;
 
 interface IProps {
@@ -27,11 +29,11 @@ interface IProps {
 export default function Layout(props: IProps) {
 	return (
 		<Wrapper>
-			<LayoutHeader />
-
-			<LayoutNavigation />
-			<Body>{props.children}</Body>
-
+			<div>
+				<LayoutHeader />
+				<LayoutNavigation />
+				<Body>{props.children}</Body>
+			</div>
 			<LayoutFooter />
 		</Wrapper>
 	);

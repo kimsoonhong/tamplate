@@ -14,7 +14,8 @@ const Wrapper = styled.div`
 `;
 
 const TextBox = styled.div`
-	font-size: var(--font-small);
+	font-size: var(--font-medium);
+	font-weight: var(--weight-semibold);
 
 	text-align: center;
 	line-height: 36px;

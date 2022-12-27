@@ -6,24 +6,8 @@ export const globalStyles = css`
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		font-family: Oboksanghoe_R, Noto Sans KR, BlinkMacSystemFont, Segoe UI,
-			Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-			sans-serif;
-	}
-
-	@font-face {
-		font-family: "Oboksanghoe_B";
-		src: url("/font/Oboksanghoe_B.otf");
-	}
-
-	@font-face {
-		font-family: "Oboksanghoe_L";
-		src: url("/font/Oboksanghoe_L.otf");
-	}
-
-	@font-face {
-		font-family: "Oboksanghoe_R";
-		src: url("/font/Oboksanghoe_R.otf");
+		font-family: Noto Sans KR, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+			Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	}
 
 	@font-face {
@@ -32,12 +16,12 @@ export const globalStyles = css`
 	}
 
 	@font-face {
-		font-family: "live";
+		font-family: "header";
 		src: url("/font/header.ttf");
 	}
 
 	body {
-		background-color: #fdfbed40;
+		background-color: #f6f6f6;
 	}
 
 	button {
@@ -67,16 +51,17 @@ export const globalStyles = css`
 	textarea,
 	button {
 		padding: 0;
+		background-color: #f6f6f6;
 	}
 
 	:root {
 		/* font-size */
 
 		--font-large: 52px;
-		--font-medium: 44px;
-		--font-regular: 32px;
-		--font-small: 24px;
-		--font-micro: 12px;
+		--font-medium: 24px;
+		--font-regular: 16px;
+		--font-small: 12px;
+		--font-micro: 6px;
 
 		/* font-weight */
 		--weight-bold: 800;
@@ -84,8 +69,8 @@ export const globalStyles = css`
 		--weight-lighter: 100;
 
 		/* color */
-		--color-1: #fed500;
-		--color-2: #ffb31f;
+		--color-1: #ff8181;
+		--color-2: #e85050;
 		--color-3: #b4b4b4;
 		--color-4: #b4b4b4;
 		--color-5: #b4b4b4;

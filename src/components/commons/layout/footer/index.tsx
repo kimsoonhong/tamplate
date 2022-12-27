@@ -2,17 +2,17 @@ import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
 	width: 100%;
-	min-height: 128px;
+	min-height: 120px;
 	padding-top: 12px;
-	margin-top: 200px;
+	margin-top: 8px;
 
 	background-color: var(--color-1);
 `;
 
 const TextBoxTop = styled.div`
-	font-size: var(--font-regular);
+	font-size: var(--font-medium);
 
-	font-family: "live";
+	font-family: "header";
 	margin-bottom: 8px;
 
 	font-weight: var(--weight-bold);

@@ -8,6 +8,7 @@ const Wrapper = styled.div`
 `;
 
 const TextBox = styled.div`
+	font-family: "header";
 	font-size: var(--font-large);
 	font-weight: var(--weight-bold);
 
@@ -18,7 +19,7 @@ const TextBox = styled.div`
 export default function LayoutHeader() {
 	return (
 		<Wrapper>
-			<TextBox>shong.Shop</TextBox>
+			<TextBox>s h o n g . s h o p </TextBox>
 		</Wrapper>
 	);
 }
