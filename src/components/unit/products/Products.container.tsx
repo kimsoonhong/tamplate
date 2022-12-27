@@ -1,5 +1,9 @@
 import ProductsUI from "./Products.presenter";
 
 export default function ProductsDetail() {
-	return <ProductsUI />;
+	return (
+		<div>
+			<ProductsUI />
+		</div>
+	);
 }
