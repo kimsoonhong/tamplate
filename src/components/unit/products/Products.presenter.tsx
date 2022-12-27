@@ -1,3 +1,5 @@
+import { Wrapper } from "./Products.styles";
+
 export default function ProductsUI() {
-	return <div>ProductsUI!!!</div>;
+	return <Wrapper>ProductsUI!!!</Wrapper>;
 }

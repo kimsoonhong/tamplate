@@ -1,3 +1,3 @@
 export const breakPoints = {
-	mobile: `(min-width:511px)`,
+	mobile: `(max-width:412px)`,
 };

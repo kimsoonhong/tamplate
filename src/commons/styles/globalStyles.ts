@@ -10,21 +10,31 @@ export const globalStyles = css`
 			Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
 			sans-serif;
 	}
-	/* 
+
 	@font-face {
 		font-family: "Oboksanghoe_B";
-		src: url("/fonts/Oboksanghoe_B.otf");
+		src: url("/font/Oboksanghoe_B.otf");
 	}
 
 	@font-face {
 		font-family: "Oboksanghoe_L";
-		src: url("/fonts/Oboksanghoe_L.otf");
+		src: url("/font/Oboksanghoe_L.otf");
 	}
 
 	@font-face {
 		font-family: "Oboksanghoe_R";
-		src: url("/fonts/Oboksanghoe_R.otf");
-	} */
+		src: url("/font/Oboksanghoe_R.otf");
+	}
+
+	@font-face {
+		font-family: "normal";
+		src: url("/font/normal4.ttf");
+	}
+
+	@font-face {
+		font-family: "live";
+		src: url("/font/header.ttf");
+	}
 
 	body {
 		background-color: #fdfbed40;
@@ -42,6 +52,10 @@ export const globalStyles = css`
 		outline: 0;
 	}
 
+	br {
+		/* font-weight: 900; */
+	}
+
 	input:focus,
 	select:focus,
 	textarea:focus,
@@ -57,27 +71,31 @@ export const globalStyles = css`
 
 	:root {
 		/* font-size */
+
 		--font-large: 52px;
 		--font-medium: 44px;
-		--font-regular: 36px;
+		--font-regular: 32px;
 		--font-small: 24px;
-		--font-micro: px;
+		--font-micro: 12px;
 
 		/* font-weight */
 		--weight-bold: 800;
-		--weight-semi-bold: 600;
-		--weight-regular: ;
+		--weight-semibold: 600;
+		--weight-lighter: 100;
 
 		/* color */
-		--color-yellow: #fed500;
-		--color-gray: #b4b4b4;
+		--color-1: #fed500;
+		--color-2: #ffb31f;
+		--color-3: #b4b4b4;
+		--color-4: #b4b4b4;
+		--color-5: #b4b4b4;
 		--color-light-gray: #f8f8f8;
 
 		@media ${breakPoints.mobile} {
 			/* font-size */
 			--font-large: 32px;
 			--font-medium: 20px;
-			--font-regular: 16px;
+			--font-regular: 46px;
 			--font-small: 12px;
 			--font-micro: px;
 
@@ -87,8 +105,11 @@ export const globalStyles = css`
 			--weight-regular: ;
 
 			/* color */
-			--color-yellow: #fed500;
-			--color-gray: #b4b4b4;
+			--color-1: #fed500;
+			--color-2: #ffb31f;
+			--color-3: #b4b4b4;
+			--color-4: #b4b4b4;
+			--color-5: #b4b4b4;
 			--color-light-gray: #f8f8f8;
 		}
 	}
