@@ -3,23 +3,29 @@ import {
 	SearchWapper,
 	SearchInput,
 	CardWapper,
-	PaginationWapper,
-	Pagination,
 } from "./Products.styles";
 import ItemCard from "../../commons/itemCard/ItemCard";
+import { IProductsUI } from "./Products.types";
 
-export default function ProductsUI() {
+export default function ProductsUI({ itemList }: IProductsUI) {
 	return (
 		<Wrapper>
 			<SearchWapper>
 				<SearchInput placeholder="# 상품명 검색하기" />
 			</SearchWapper>
 			<CardWapper>
-				<ItemCard /> <ItemCard /> <ItemCard /> <ItemCard /> <ItemCard />
+				{itemList.map((i, idx) => {
+					return (
+						<ItemCard
+							key={idx}
+							name={i.item_name}
+							price={i.price}
+							src={i.detail_image_url}
+							number={i.item_no}
+						/>
+					);
+				})}
 			</CardWapper>
-			<PaginationWapper>
-				<Pagination> {`<  1 2 3 4 5  >`}</Pagination>
-			</PaginationWapper>
 		</Wrapper>
 	);
 }

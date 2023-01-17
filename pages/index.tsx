@@ -1,11 +1,5 @@
-// import Head from "next/head";
-// import Image from "next/image";
-// import { Inter } from "@next/font/google";
-import ProductsPage from "./products";
-// import styles from "../styles/Home.module.css";
-
-// const inter = Inter({ subsets: ["latin"] });
+import LoginDetail from "../src/components/unit/login/Login.container";
 
 export default function Home() {
-	return <ProductsPage />;
+	return <LoginDetail />;
 }

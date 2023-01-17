@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-
+import { useRouter } from "next/router";
 const Wrapper = styled.div`
 	width: 100%;
 	height: 36px;
 	background-color: var(--color-2);
+	display: ${() => (useRouter().pathname === "/" ? "none" : "flex")};
 
-	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 0px 120px 0px 120px;
@@ -25,10 +25,30 @@ const TextBox = styled.div`
 `;
 
 export default function LayoutNavigation() {
+	const router = useRouter();
 	return (
 		<Wrapper>
-			<TextBox>상품</TextBox>
-			<TextBox>장바구니</TextBox>
+			<TextBox
+				onClick={() => {
+					router.push("/products");
+				}}
+			>
+				상품
+			</TextBox>
+			<TextBox
+				onClick={() => {
+					router.push("/mui");
+				}}
+			>
+				테일윈드 MUI
+			</TextBox>
+			<TextBox
+				onClick={() => {
+					router.push("/example");
+				}}
+			>
+				페이지예시
+			</TextBox>
 		</Wrapper>
 	);
 }

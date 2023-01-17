@@ -40,6 +40,7 @@ export const SearchInput = styled.input`
 
 export const CardWapper = styled.div`
 	width: 100%;
+	flex-wrap: wrap;
 
 	display: flex;
 	flex-direction: row;

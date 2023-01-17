@@ -1,3 +1,9 @@
+import ItemDetail from "components/unit/item/Item.container";
+
 export default function ItemPage() {
-	return <div>ItemPage</div>;
+	return (
+		<>
+			<ItemDetail />
+		</>
+	);
 }

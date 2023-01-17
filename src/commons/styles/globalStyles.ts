@@ -40,6 +40,12 @@ export const globalStyles = css`
 		/* font-weight: 900; */
 	}
 
+	hr {
+		width: 100%;
+		height: 2px;
+		background-color: pink;
+	}
+
 	input:focus,
 	select:focus,
 	textarea:focus,
