@@ -76,12 +76,12 @@ export const CartTextDiv = styled.div`
 	}
 `;
 
-interface IItemCard {
+type IItemCard = {
 	number: number;
 	src: string;
 	name: string;
 	price: number;
-}
+};
 export default function ItemCard(props: IItemCard) {
 	const router = useRouter();
 	const onClickDetail = () => {

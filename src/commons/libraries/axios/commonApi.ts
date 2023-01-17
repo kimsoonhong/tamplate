@@ -1,14 +1,14 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 import { API_URL, API_DEV_URL, CMS_SERVER_URL } from "../../../../env";
 
-interface CommonRes {
+type CommonRes = {
 	code: number;
 	data?: any;
 	reason?: any;
 	content?: any;
 	msg?: string;
 	param?: any;
-}
+};
 
 const isDevMode = () =>
 	API_URL.includes("dev") || location.origin.includes("dev");

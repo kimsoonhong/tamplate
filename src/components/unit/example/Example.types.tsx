@@ -1,29 +1,14 @@
-export interface IgetAccordionContents {
+export type IgetRecomExploration = {
 	title: string;
 	page: number;
-}
+};
 
-export interface IgetRecomExploration {
+export type IputRecomExploration = {
 	title: string;
 	page: number;
-}
+};
 
-export interface IgetAccordionContents {
-	title: string;
-	page: number;
-}
-
-export interface IputRecomExploration {
-	title: string;
-	page: number;
-}
-
-export interface IgetAccordionContents {
-	title: string;
-	page: number;
-}
-
-export interface IgetGroupRes {
+export type IgetGroupRes = {
 	id?: any;
 	activeYsno?: boolean | string;
 	amndDttm?: string;
@@ -42,8 +27,7 @@ export interface IgetGroupRes {
 	themeName?: string;
 	exhibitStartDttm?: string;
 	exhibitEndDttm?: string;
-}
+};
 
-
-// - 하나의 파일에서만 쓰는 interface라면 해당 파일에서 선언
-// - interface 명 앞에는 대문자 I 를 붙혀 관리한다.
+// - 하나의 파일에서만 쓰는 type이라면 해당 파일에서 선언
+// - type 명 앞에는 대문자 I 를 붙혀 관리한다.

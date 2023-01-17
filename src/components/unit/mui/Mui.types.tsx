@@ -1,4 +1,4 @@
-export interface IMUiUI {
+export type IMUiUI = {
 	open: boolean;
 	handleOpen: () => void;
-}
+};

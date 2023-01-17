@@ -1,6 +1,6 @@
 import { Button } from "@material-tailwind/react";
 
-interface IBtn {
+type IBtn ={
 	title: string;
 }
 

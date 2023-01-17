@@ -6,12 +6,12 @@ import "tailwindcss/tailwind.css";
 import { ThemeProvider } from "@material-tailwind/react";
 import { createContext, useState } from "react";
 
-interface IContext {
+type IContext = {
 	global: {
 		isMember: string | undefined;
 		setIsMember: (e: any) => void;
 	};
-}
+};
 
 export const GlobalContext = createContext<IContext>({
 	global: {

@@ -5,9 +5,9 @@ export default function ExampleInfoUI() {
 		<div>
 			<div>
 				<div>이름 : {EXAMPLE_CONST.NAME}</div>
-				<div>성별 : {EXAMPLE_CONST.BERTH}</div>
+				<div>성별 : {EXAMPLE_CONST.GENDER}</div>
 				<div>생녕월일 : {EXAMPLE_CONST.BERTH}</div>
-				<div>MBTI : {EXAMPLE_CONST.MBIT}</div>
+				<div>MBTI : {EXAMPLE_CONST.MBTI}</div>
 			</div>
 		</div>
 	);

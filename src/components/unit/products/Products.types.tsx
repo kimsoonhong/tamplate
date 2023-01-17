@@ -1,4 +1,4 @@
-export interface IProductsUI {
+export type IProductsUI = {
 	itemList: {
 		item_no: number;
 		item_name: string;
@@ -7,4 +7,4 @@ export interface IProductsUI {
 		score: number;
 		availableCoupon?: boolean;
 	}[];
-}
+};

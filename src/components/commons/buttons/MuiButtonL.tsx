@@ -1,8 +1,8 @@
 import { Button } from "@material-tailwind/react";
 
-interface IBtn {
+type IBtn = {
 	title: string;
-}
+};
 
 export default function MuiButtonL({ title }: IBtn) {
 	return (

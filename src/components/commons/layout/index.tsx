@@ -19,9 +19,9 @@ const Body = styled.div`
 	width: 100%;
 `;
 
-interface IProps {
+type IProps = {
 	children: ReactNode;
-}
+};
 export default function Layout(props: IProps) {
 	return (
 		<Wrapper>

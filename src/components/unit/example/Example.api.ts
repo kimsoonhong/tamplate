@@ -1,17 +1,13 @@
-import { IExInterface } from "commons/interface/ExType";
 import commonApi from "commons/libraries/axios/commonApi";
-import {
-	IgetAccordionContents,
-	IgetRecomExploration,
-	IputRecomExploration,
-} from "./Example.types";
+import { IgetRecomExploration, IputRecomExploration } from "./Example.types";
+import { IExTpye } from "commons/type/ExType";
 
 //컨텐츠의 목록의 가지고 온다.
-export const getAccordionContents = async (params: IExInterface) =>
+export const getAccordionContents = async (params: IExTpye) =>
 	await commonApi.get(`/recom/contents`, { params: params });
 
 //탐색홈을 조회한다.
-export const getRecomExploration = async (params: IExInterface) =>
+export const getRecomExploration = async (params: IExTpye) =>
 	await commonApi.get(`/recom/recom-exploration`, { params: params });
 
 //탐색홈을 수정한다.

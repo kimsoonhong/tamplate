@@ -1,8 +1,8 @@
 export const EXAMPLE_CONST = {
 	NAME: "김순홍",
-	SEX: "남",
+	GENDER: "남",
 	BERTH: "1992.11.10.",
-	MBIT: "ENTP",
+	MBTI: "ENTP",
 };
 
 export const EXAMPLE_CONST_SEC = {};
